@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>#(title)</title>
+
+  <style>
+    section.seccion2 {
+        display: flex;
+        justify-content: center;
+    }
+   
+    /* Box sizing rules */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* Remove default padding */
+    ul[class],
+    ol[class] {
+        padding: 0;
+    }
+
+    /* Remove default margin */
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    ul[class],
+    ol[class],
+    li,
+    figure,
+    figcaption,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
+
+    /* Set core body defaults */
+    body {
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+    }
+
+    /* Remove list styles on ul, ol elements with a class attribute */
+    ul[class],
+    ol[class] {
+        list-style: none;
+    }
+
+    /* A elements that don't have a class get default styles */
+    a:not([class]) {
+        text-decoration-skip-ink: auto;
+    }
+
+    /* Make images easier to work with */
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    /* Natural flow and rhythm in articles by default */
+    article>+ {
+        margin-top: 1em;
+    }
+
+    /* Inherit fonts for inputs and buttons */
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    /* Remove all animations and transitions for people that prefer not to see them */
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+
+    /------------RESET CSS--------------/
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        height: 100%;
+        display: flex;
+
+        flex-direction: column;
+
+
+    }
+    header {
+    height: 25vh;
+    width: 100vw;
+    background-color: #005FAC;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.headerSinBarra {
+    height: auto;
+    width: 100vw;
+    background-color: #005FAC;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.secciones li:hover {
+    cursor: pointer;
+}
+
+.secciones a img {
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 50px;
+    max-width: 50px;
+}
+.secciones a img:hover {
+    cursor: pointer;
+}
+.seccion1 {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+seccion2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#busqueda {
+    height: 100%;
+    width: 80%;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+#btnProyecto {
+    background-color: #005FAC;
+    width: fit-content;
+    height: 40px;
+    color: white;
+    height: fit-content;
+    border-radius: 5px;
+    transition: background-color 0.5s ease; /* Agregado */
+    margin-top: 30px;
+    margin-bottom: 5vh;
+    font-weight: bold;
+
+}
+.botonAzul {
+    background-color: #005FAC;
+    color: white;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease; /* Agregado */
+    margin-top: 30px;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    justify-self: end;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+#botonCrearProyecto, .botonAzul a {
+    height: fit-content;
+    transition: background-color 0.5s ease; /* Agregado */
+}
+#btn {
+    background-color: #005FAC;
+    color: white;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease; /* Agregado */
+
+}
+
+.figureFotoUtad {
+    height: auto;
+    width: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.figureFotoUtad img {
+    max-width: 100%;
+    width: 60%;
+}
+
+.secciones {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+
+}
+
+.secciones li {
+    margin-right: 40px;
+    font-size: 18px;
+    transition: transform 0.2s;
+    
+}
+.secciones li:hover{
+    transform: scale(1.1);
+}
+
+.secciones li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+button{
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+    border: none;
+    font-size: 16px;
+    color: #005FAC;
+    font-weight: 600;
+}
+
+.buscadorDiv {
+    background-color: white;
+    height: 60px;
+    width: 700px;
+}
+
+main {
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+#contenedorusercrear h2 {
+    font-size: 25px;
+    color: #005FAC;
+}
+
+#bodyuser {
+    overflow-x: hidden;
+    background-color: rgb(220, 229, 229);
+}
+.proyectosMasPopulares {
+    margin-top: 40px;
+
+}
+.filtrosDiv {
+    background-color: #E8E7E7;
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tarjetasDiv {
+    margin-top: 2vh;
+    max-width: 60vw;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.tarjeta {
+
+    border: 3px solid #005FAC;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 3%;
+
+}
+.tarjeta h3 {
+    margin-bottom: 10px;
+}
+.tarjeta p {
+    margin-bottom: 10px;
+} 
+#divCrear {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+}
+.tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtrosOrden {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.filtrosOrden p {
+    margin-left: 10px;
+}
+.filtrosOrden input {
+    margin-left: 10px;
+    height: 40px;
+}
+#filt {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.filtrosOrden select {
+    margin-left: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border:1px solid #005FAC ;
+   
+}
+  </style>
+
+</head>
+
+<body>
+
+<header>
+        <section class="seccion1">
+            <figure class="figureFotoUtad">
+                <img src="assets/imagenes/logoU.png" alt="logo Utad">
+            </figure>
+            <ul class="secciones">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="crearProyecto">Mis Proyectos</a></li>
+                <li><a href="guardarProy.html">Guardado</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><button><a href="iniciarsesion_usuario.html">Usuario</a></button></li>            </ul>
+        </section>
+        <section class="seccion2">
+            <form class="buscadorDiv">
+                <input id="busqueda" type="search" placeholder="Buscar proyectos U-TAD" aria-label="Search">
+                <button id="search" class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            
+        </section>
+    </header>
+
+ <section class="editar">
+  
+        <main class="pubProy">
+            <div class="proyectosMasPopulares">
+                <div id="contenedorusercrear">
+                    <h2 style="margin-left: 15px; font-size: 26px;">¡Publica tu proyecto!</h2>
+                </div>
+            </div>
+           
+            <form method="POST">
+            <div id="verProyectoForm">
+                <div id="divForm1">
+                    <div class="datosForm2">
+                        <div class="divLista" id="divLista1">
+                            <input type="text" class="inputRequisitos" placeholder="Localización (Edif U-tad)" name="localizacion">
+                            <input type="text" class="inputRequisitos" placeholder="Disposicion" name="disposicion">
+                        </div>
+                        <div class="divLista" id="divLista2" >
+                            <input type="text" class="inputRequisitos" placeholder="Nombre del Proyecto" name="nombreProy">
+                            <li>0 inscritos</li>
+                        </div>
+                    </div>
+                </div>
+                <div id="divForm2">
+                    <div class="divReqCon">
+                        <h2>REQUISITOS</h2>
+                        <div class="divLista">
+
+                            <li>Estudios:
+                                <input type="text" class="inputRequisitos" name="estudios">
+                            </li>
+                            <li>Curso recomendado:
+                                <input type="text" class="inputRequisitos" name="cursoRecomendado">
+                            </li>
+                            <li>Idiomas:
+                                <input type="text" class="inputRequisitos" name="idiomas">
+                            </li>
+                            <li>Certificaciones:
+                                <input type="text" class="inputRequisitos" name="certificaciones">
+                            </li>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div id="descripcion">
+                    <h2>DESCRIPCIÓN</h2>
+                    <textarea name="descripcionProy" placeholder="Introduce los detalles de tu proyecto" id="desc" style="width: 800px; max-width: 800px; height: 250px; max-height: 400px;"></textarea>
+                </div>
+            
+            </div>
+
+            
+                <button type="submit">Inscribirme</button>
+
+            </form>
+
+            
+
+        </main>
+
+    </section>
+
+  
+</body>
+</html>
